@@ -1,4 +1,4 @@
-FROM google/debian:wheezy
+FROM launcher.gcr.io/google/debian8:latest
 MAINTAINER Sharif Salah <sharif.salah+docker@gmail.com>
 
 RUN apt-get update && \
