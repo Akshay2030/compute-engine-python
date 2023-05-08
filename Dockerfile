@@ -1,9 +1,9 @@
 FROM launcher.gcr.io/google/debian8:latest
 MAINTAINER Sharif Salah <sharif.salah+docker@gmail.com>
 
-RUN sudo apt-get update && \
-    sudo apt-get install -y python-dev python-pip && \
-    sudo pip install redis flask
+RUN apt-get update && \
+    apt-get install -y python-dev python-pip2 && \
+    pip2 install redis flask
 
 ADD app /app
 
